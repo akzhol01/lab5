@@ -1,5 +1,5 @@
 import re
-p = r"ab*"
+p = r"a(b{1,})"
 t = [
     "a",   
     "ab",     
@@ -11,8 +11,9 @@ t = [
 ]
 
 
-for string in t:
-    if re.fullmatch(p, string): 
-        print(f"'{string}' сәйкес келеді")
+for i in t:
+    if re.fullmatch(p, i): 
+        print(f"'{i}' сәйкес келеді")
     else:
-        print(f"'{string}' сәйкес келмейді")
+        print(f"'{i}' сәйкес келмейді")
+        
