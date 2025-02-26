@@ -1,0 +1,20 @@
+
+import re
+p = r"a(b{2,3})"
+t = [
+    "a",   
+    "ab",     
+    "abb",  
+    "abbb",   
+    "ac",     
+    "abc",  
+    "b",     
+]
+
+
+for i in t:
+    if re.fullmatch(p, i): 
+        print(f"'{i}' сәйкес келеді")
+    else:
+        print(f"'{i}' сәйкес келмейді")
+        
