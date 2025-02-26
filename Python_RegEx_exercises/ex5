@@ -1,0 +1,10 @@
+import re
+
+def fff(t):
+    p = r'a.*b$'
+    m = re.findall(p, t)
+    return m
+
+t = "axb acb a123b aaab testb"
+r = fff(text)
+print("Matching sequences:", r)
