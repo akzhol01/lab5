@@ -1,0 +1,9 @@
+import re
+
+def s(s):
+    return re.sub(r'(?<!^)(?=[A-Z])', '_', s).lower()
+
+# Example usage
+t = "HelloWorldExample"
+r = s(t)
+print("Snake case string:", r)
