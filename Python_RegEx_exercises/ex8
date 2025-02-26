@@ -1,0 +1,7 @@
+import re
+
+def s(s):
+    return re.findall(r'[^A-Z]+', s)
+t = "HelloWorldExample"
+r = s(t)
+print("Split string:", r)
