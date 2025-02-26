@@ -1,0 +1,9 @@
+import re
+
+def r(t):
+    return re.sub(r'[ ,.]', ':', t)
+
+
+t = "Hello, world. Hi"
+r1 = r(text)
+print("Modified text:", r1)
