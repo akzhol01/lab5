@@ -1,0 +1,11 @@
+import re
+
+def fff(t):
+    p = r'\b[A-Z][a-z]+\b'
+    m = re.findall(p, t)
+    return m
+
+
+t = "Hello World Test_string ExampleTest AnotherTest test_string123"
+r = fff(text)
+print("Matching sequences:", r)
