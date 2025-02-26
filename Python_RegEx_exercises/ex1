@@ -13,7 +13,7 @@ t = [
 
 for i in t:
     if re.fullmatch(p, i): 
-        print(f"'{i}' сәйкес келеді")
+        print(f"'{i}' true")
     else:
-        print(f"'{i}' сәйкес келмейді")
+        print(f"'{i}' false")
         
