@@ -1,0 +1,18 @@
+import re
+p = r"ab*"
+t = [
+    "a",   
+    "ab",     
+    "abb",  
+    "abbb",   
+    "ac",     
+    "abc",  
+    "b",     
+]
+
+
+for string in t:
+    if re.fullmatch(p, string): 
+        print(f"'{string}' сәйкес келеді")
+    else:
+        print(f"'{string}' сәйкес келмейді")
