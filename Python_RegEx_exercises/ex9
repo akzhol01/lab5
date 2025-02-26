@@ -1,0 +1,8 @@
+import re
+
+def s(s):
+    return re.sub(r'(?<!^)(?=[A-Z])', ' ', s)
+
+t = "HelloWorldExample"
+r = s(t)
+print("Formatted string:", r)
